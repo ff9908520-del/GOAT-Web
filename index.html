@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GOAT Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+
+    <section class="presentation">
+      <div class="background">
+        <div class="stars" aria-hidden="true"></div>
+        <div class="city" aria-hidden="true"></div>
+        <div class="pulse" aria-hidden="true"></div>
+      </div>
+
+      <section class="slideshow" id="slideshow">
+        <div class="slide-viewport">
+          <video id="slide-video" autoplay muted loop playsinline style="display:none;"></video>
+          <img id="slide-img" src="images/slide1.png" alt="Slide 1">
+
+          <!-- Slide-specific animation containers -->
+          <div id="anim-numbers" class="anim-layer" aria-hidden="true"></div>
+          <div id="anim-sos" class="anim-layer" aria-hidden="true"><div class="sos-dot"></div></div>
+          <div id="anim-flow" class="anim-layer" aria-hidden="true">
+            <div class="flow-icon" id="flow-icon">🚶‍♀️</div>
+          </div>
+          <svg id="anim-components" class="anim-layer" aria-hidden="true" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet"></svg>
+        </div>
+
+        <div class="slide-caption">
+          <h2 id="slide-title">The Harsh Reality</h2>
+          <p id="slide-desc">Rising crimes against women in Tamil Nadu</p>
+        </div>
+
+        <div class="pager" role="navigation" aria-label="Slide navigation">
+          <button class="pager-btn" id="prev" aria-label="Previous">◀ Previous</button>
+
+          <div class="progress" aria-hidden="false">
+            <div class="segments" id="progress-segments" role="tablist"></div>
+            <div class="progress-text" id="progress-text">1/7</div>
+          </div>
+
+          <button class="pager-btn" id="next" aria-label="Next">Next ▶</button>
+        </div>
+
+        <div class="controls">
+          <button id="play" class="play" aria-pressed="false">Play</button>
+        </div>
+      </section>
+
+      <!-- overlay removed for full-screen presentation -->
+    </section>
+
+    <!-- note removed for full-screen presentation -->
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
